@@ -30,9 +30,11 @@ use the fonts in other ways in the font hierarchy etc. */
 button {
   transition: all 3s;
 }
+
 a {
   transition: all 3s;
 }
+
 button:hover {
   background-color: var(--link-hover-color);
   transform: scale(3) rotate(40deg);
@@ -191,7 +193,7 @@ button {
   text-shadow: 0px -1px 0px #0374a0;
   transition: all 0.2s ease;
   cursor: pointer;
-  margin: 0 1rem 1rem 0;
+  margin: 0 1rem 0 0; /* 22S - 0 margin-bottom mobile */
 }
 
 .secondary-button {
@@ -273,7 +275,7 @@ footer {
   .swatches li {
     margin-right: 3%;
     height: 10vw;
-    width: 20%;
+    /* width: 20%; 22s - already in mobile */
   }
 
   .textures li {
